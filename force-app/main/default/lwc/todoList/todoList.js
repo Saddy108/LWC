@@ -15,13 +15,18 @@ export default class TodoList extends LightningElement {
     get todos() {
         return this._todos;
     }
+
+    // SGN : We can use this set method to set value and also run function or filter or logic to run.
     set todos(value) {
         this._todos = value;
         this.filterTodos();
     }
 
+    // SGN : If checkbox is clicked in this child component, then if condition will be executed. Otherwise whatever values come
+    // from parent it will execute that.
     filterTodos() {
         if (this.priorityFilter) {
+            // SGN : Filter method of Array is used to check which data has filter enabled, so it shows that only
             this.filteredTodos = this._todos.filter(
                 (todo) => todo.priority === true
             );

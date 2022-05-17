@@ -20,6 +20,7 @@ export default class ApiSetterGetter extends LightningElement {
         this.priority = event.target.checked;
     }
 
+    // SGN : This is how new value or row is added into the Array, without mutating. And it directly reflects in child
     handleSave() {
         this.lastTodoId = this.lastTodoId + 1;
         // Using immutable data structures. Creating a new array with old and new items instead of mutating the existing array with push()
