@@ -8,3 +8,4 @@
         <description>This is the record Id that changed</description>
     </lightningMessageFields>
 </LightningMessageChannel>
+<!-- SGN : In this folder we save LMS and also define different of which data needs to be passed -->
