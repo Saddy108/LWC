@@ -5,9 +5,12 @@
                 label="Refresh Time"
                 onclick={handleRefresh}
             ></lightning-button>
+
+            <!-- SGN : We can also define the classes while declaring the child component -->
             <c-clock class="slds-show slds-is-relative"></c-clock>
         </div>
 
+        <!-- SGN : This is how you can define the slot and add contents like this -->
         <c-view-source source="lwc/apiMethod" slot="footer">
             Parent-to-child communication. Call a public (@api) method in a
             child component.
